@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style> body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; margin: 0; padding: 20px; } .container { max-width: 100%; margin: 0 auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); } h1 { text-align: center; color: #333333; } p { line-height: 1.6; color: #555555; } .highlight { color: #ff6f61; font-weight: bold; } .price { text-align: center; font-size: 1.2em; color: #333333; } .content-list { list-style-type: none; padding-left: 0; } .content-list li { background-color: #f0f0f0; margin-bottom: 10px; padding: 10px; border-radius: 4px; } </style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Yesidesign</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="Coorporativo.html">Home</a></li>
+							
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Luxury pink christmas</h1>
+							<span class="image main"><img src="images/IMG_1971.jpg" alt="" /></span>
+
+							<div class="container"> <h1>Descripción del Producto</h1> <p class="price">Valor:</p> <p class="highlight">1 - 3 unidades: $67</p> <p class="highlight">3 unidades en adelante: $65.50</p> <p>Contenido:</p> <ul class="content-list"> <li>Importado Vino Chardonnay espumante con la exquisitez oriental del Sake, marca Miyabi.</li> <li>Taza de vidrio con opción para personalizar con nombre de tu cliente o persona que recibirá el obsequio.</li> <li>Chocobom decorada rellena de chocolate en polvo y marshmallows (malvaviscos).</li> <li>Elegante box cuadrada de dos divisiones con tapa de acetato y lazo decorativo.</li> <li>Elemento navideño decorativo.</li> <li>Galletas de anís o vainilla.</li> <li>6 unidades de monedas de chocolate.</li> <li>Tarjeta con mensaje a selección del cliente.</li> </ul> </div>
+						
+						
+						</div>
+					</div>
+
+				<!-- Footer -->
+						<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contáctanos</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Siguenos</h2>
+								<ul class="icons">
+								<li><a href="https://www.facebook.com/profile.php?id=100091164734996" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://www.instagram.com/yessidetallesyglobos/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>									
+									<li><a href="https://api.whatsapp.com/message/2ZV4JVLWL6Q5O1?autoload=1&app_absent=0" class="icon solid style2 fa-phone"><span class="label">whatsapp</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+			<script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+			</script>
+			<script type="text/javascript">
+			   (function(){
+				  emailjs.init({
+					publicKey: "0_wMhbVrb02mChpEo",
+				  });
+			   })();
+			</script>
+	</body>
+</html>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("0_wMhbVrb02mChpEo");
+    })();
+
+    function enviar(event) {
+        event.preventDefault();
+        emailjs.send("service_xjb5tv9", "template_4pzcxpm", {
+            Para: document.getElementById('name').value,
+            De: document.getElementById('email').value,
+            test: document.getElementById('message').value
+        }).then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Mensaje enviado exitosamente');
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert('Error al enviar el mensaje');
+        });
+    }
+
+  
+</script>
